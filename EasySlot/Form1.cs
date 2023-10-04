@@ -79,14 +79,17 @@ namespace EasySlot
             }
             label3.Text = num3.ToString();
         }
+        //停止チェック
         private bool isAllStop()
         {
             return  !timer1.Enabled && !timer2.Enabled && !timer3.Enabled;
         }
+        //的中チェック
         private bool isWin()
         {
             return num1==num2 && num2==num3;
         }
+        //リザルト処理
         private void Result()
         {
             if (isWin())
